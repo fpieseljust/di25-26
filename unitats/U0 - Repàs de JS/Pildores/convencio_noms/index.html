@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fpieseljust.github.io/di25-26/unitats/U0%20-%20Rep%C3%A0s%20de%20JS/Tasques/ExerciciPOO/">
+        <link rel="canonical" href="https://fpieseljust.github.io/di25-26/unitats/U0%20-%20Rep%C3%A0s%20de%20JS/Pildores/convencio_noms/">
       
       
-        <link rel="prev" href="../../Pildores/import_export/">
+        <link rel="prev" href="../classes_herencia/">
       
+      
+        <link rel="next" href="../entrada_eixida/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Repàs de POO amb JS - Desenvolupament d'interfícies- 2n DAM - IES Jaume II "El Just"</title>
+        <title>Convenció de noms - Desenvolupament d'interfícies- 2n DAM - IES Jaume II "El Just"</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercici-gestio-duna-biblioteca" class="md-skip">
+        <a href="#convencio-de-noms" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Repàs de POO amb JS
+              Convenció de noms
             
           </span>
         </div>
@@ -313,17 +315,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -337,7 +341,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Teoria
@@ -351,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pildores/classes_herencia/" class="md-nav__link">
+      <a href="../classes_herencia/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -369,10 +373,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Pildores/convencio_noms/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Convenció de noms
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -381,6 +403,156 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#convencio-de-noms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Convenció de noms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Convenció de noms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-camel-case-cas-camell" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Camel Case (cas camell)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pascal-case-tambe-conegut-com-uppercamelcase" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pascal Case (també conegut com UpperCamelCase)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-snake-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Snake Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-kebab-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Kebab Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-constantes-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Constantes (constants)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-evitar-abreviacions-poc-clares" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Evitar abreviacions poc clares
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-metodes-daccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Mètodes d'Acció
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-evitar-noms-generals-o-massa-generics" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Evitar noms generals o massa genèrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-evitar-noms-reservats-o-conflictes-amb-paraules-clau" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Evitar noms reservats o conflictes amb paraules clau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-variables-booleans" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Variables booleans
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-evitar-lus-de-_-guio-baix-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Evitar l'ús de _ (guió baix inicial)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-noms-de-funcions-i-variables-en-plural-o-singular" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Noms de funcions i variables en plural o singular
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resum-de-les-convencions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resum de les convencions:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -393,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pildores/entrada_eixida/" class="md-nav__link">
+      <a href="../entrada_eixida/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -414,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pildores/funcions_arrays/" class="md-nav__link">
+      <a href="../funcions_arrays/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -435,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pildores/import_export/" class="md-nav__link">
+      <a href="../import_export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,19 +633,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -487,7 +657,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Exercicis
@@ -498,28 +668,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Repàs de POO amb JS
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tasques/ExerciciPOO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -528,33 +680,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#exercici-gestio-duna-biblioteca" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exercici: Gestió d'una Biblioteca
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -600,11 +725,134 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercici-gestio-duna-biblioteca" class="md-nav__link">
+  <a href="#convencio-de-noms" class="md-nav__link">
     <span class="md-ellipsis">
-      Exercici: Gestió d'una Biblioteca
+      Convenció de noms
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Convenció de noms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-camel-case-cas-camell" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Camel Case (cas camell)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pascal-case-tambe-conegut-com-uppercamelcase" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Pascal Case (també conegut com UpperCamelCase)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-snake-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Snake Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-kebab-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Kebab Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-constantes-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Constantes (constants)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-evitar-abreviacions-poc-clares" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Evitar abreviacions poc clares
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-metodes-daccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Mètodes d'Acció
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-evitar-noms-generals-o-massa-generics" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Evitar noms generals o massa genèrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-evitar-noms-reservats-o-conflictes-amb-paraules-clau" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Evitar noms reservats o conflictes amb paraules clau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-variables-booleans" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Variables booleans
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-evitar-lus-de-_-guio-baix-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Evitar l'ús de _ (guió baix inicial)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-noms-de-funcions-i-variables-en-plural-o-singular" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Noms de funcions i variables en plural o singular
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resum-de-les-convencions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resum de les convencions:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -623,59 +871,84 @@
                   
 
 
-  <h1>Repàs de POO amb JS</h1>
+  <h1>Convenció de noms</h1>
 
-<div><h2 id="exercici-gestio-duna-biblioteca">Exercici: Gestió d'una Biblioteca</h2>
-<p>Crea una aplicació de línia de comandes de gestió de biblioteca amb Javascript que utilitze els conceptes de POO. La biblioteca ha de ser capaç de gestionar material (llibres, revistes i pel·lícules), socis i administradors de préstecs.</p>
-<p>Cada llibre ha de tindre:</p>
+<div><h2 id="convencio-de-noms">Convenció de noms</h2>
+<p>Aquí tens una descripció de les principals convencions de noms en JavaScript:</p>
+<h3 id="1-camel-case-cas-camell">1. <strong>Camel Case (cas camell)</strong></h3>
 <ul>
-<li>un títol</li>
-<li>un autor</li>
-<li>un número d'exemplars disponibles</li>
+<li><strong>Variables</strong> i <strong>funcions</strong> s'escriuen amb <strong>camelCase</strong>, on la primera paraula comença en minúscules i cada paraula subseqüent comença en majúscules.</li>
+<li><strong>Exemple</strong>: <code>totalAmount</code>, <code>calculateSum</code>, <code>userName</code></li>
 </ul>
-<p>Cada revista ha de tindre:</p>
+<p><strong>Regla</strong>: Comença amb una lletra minúscula i utilitza majúscules per separar les paraules.</p>
+<h3 id="2-pascal-case-tambe-conegut-com-uppercamelcase">2. <strong>Pascal Case (també conegut com UpperCamelCase)</strong></h3>
 <ul>
-<li>un títol</li>
-<li>un data de publicació</li>
-<li>un número d'exemplars disponibles</li>
+<li><strong>Classes</strong> i <strong>constructors</strong> s'escriuen amb <strong>PascalCase</strong>, que és similar al <strong>camelCase</strong>, però amb la primera lletra de la primera paraula també en majúscules.</li>
+<li><strong>Exemple</strong>: <code>Person</code>, <code>CarModel</code>, <code>DatabaseConnection</code></li>
 </ul>
-<p>Cada pel·lícula ha de tindre:</p>
+<p><strong>Regla</strong>: Comença amb una lletra majúscula i utilitza majúscules per separar les paraules.</p>
+<h3 id="3-snake-case">3. <strong>Snake Case</strong></h3>
 <ul>
-<li>un títol</li>
-<li>un director</li>
-<li>un gènere</li>
-<li>un número d'exemplars disponibles</li>
+<li><strong>No és molt comú a JavaScript</strong>, però es fa servir en alguns altres llenguatges (com Python o bases de dades) o per noms de fitxers. En aquest cas, les paraules es separen amb guions baixos (_).</li>
+<li><strong>Exemple</strong>: <code>user_name</code>, <code>total_amount</code>, <code>car_model</code></li>
 </ul>
-<p>Cada soci ha de tindre:</p>
+<p><strong>Nota</strong>: A JavaScript, aquesta convenció és menys utilitzada, però podries trobar-la en API o bases de dades.</p>
+<h3 id="4-kebab-case">4. <strong>Kebab Case</strong></h3>
 <ul>
-<li>un nom</li>
-<li>un DNI</li>
-<li>una llista de llibres prestats.</li>
+<li>Similar al <strong>snake_case</strong>, però utilitzant un guió (<code>-</code>) per separar les paraules. Aquesta convenció s’utilitza generalment en noms de fitxers, URLs o en entorns com CSS o en noms d'arxius.</li>
+<li><strong>Exemple</strong>: <code>user-name</code>, <code>total-amount</code>, <code>car-model</code></li>
 </ul>
-<p>Cada administrador de préstecs ha de tindre:</p>
+<p><strong>Nota</strong>: No s'usa per a noms de variables o funcions en codi JavaScript, però pot ser útil per noms de fitxers, carpetes o rutes.</p>
+<h3 id="5-constantes-constants">5. <strong>Constantes (constants)</strong></h3>
 <ul>
-<li>un nom</li>
-<li>un DNI</li>
-<li>un càrrec (administrador o ajudant)</li>
+<li>Per a les constants que no canvien (és a dir, valors que es mantenen igual durant tota l'execució), s'usa <strong>UPPERCASE</strong> amb guions baixos per separar les paraules.</li>
+<li><strong>Exemple</strong>: <code>MAX_SIZE</code>, <code>PI_VALUE</code>, <code>DEFAULT_LANGUAGE</code></li>
 </ul>
-<p>L'aplicació ha de permetre les següents funcions:</p>
+<p><strong>Regla</strong>: Escriu les constants en majúscules i separa les paraules amb guions baixos.</p>
+<h3 id="6-evitar-abreviacions-poc-clares">6. <strong>Evitar abreviacions poc clares</strong></h3>
 <ul>
-<li>Afegir un llibre a la biblioteca amb la informació del títol, autor i nombre d'exemplars disponibles.</li>
-<li>Afegir una pel·lícula a la biblioteca amb la informació del títol, director, gènere i nombre d'exemplars disponibles.</li>
-<li>AAfegir una revista a la biblioteca amb la informació del títol, la data de publicació i nombre d'exemplars disponibles.</li>
-<li>Afegir un soci amb el seu nom i DNI.</li>
-<li>Afegir un administrador amb el seu nom, DNI i càrrec.</li>
-<li>Prestar un recurs a un soci. Cal verificar que el recurs estiga disponible i que el soci no haja superat el límit de llibres prestats (per exemple, un màxim de 3 llibres per soci).</li>
-<li>Retornar un llibre.</li>
-<li>Mostrar una llista de tots els recursos, amb la possibilitat de filtrar per tipus. En el cas de pel·lícules s'haurà de filtrar també per gènere. En el cas de revista per any de publicació.</li>
-<li>Mostrar una llista de tots els socis.</li>
-<li>Mostrar una llista de tots els administradors de préstecs.</li>
-<li>Mostrar una llista amb la informació sobre quins recursos estan prestats a cada soci.</li>
+<li>És una bona pràctica evitar les abreviacions que poden ser difícils de comprendre per altres desenvolupadors. Per exemple, en lloc de <code>str</code> per a una cadena de text, utilitza <code>string</code>, i en lloc de <code>num</code> utilitza <code>number</code>.</li>
+<li><strong>Exemple</strong>: <code>userName</code> en comptes de <code>usrNm</code>, <code>totalAmount</code> en comptes de <code>totAmt</code>.</li>
 </ul>
-<p>Definix una classe per a cada objecte i utilitzar correctament els conceptes de programació orientada a objectes com l'herència, encapsulació i mètodes per gestionar les operacions anteriorment mencionades.</p>
-<p>Crea també una classe principal o un programa de prova per interactuar amb la biblioteca.</p>
-<p>Aquest exercici t'ajudarà a practicar els conceptes de programació orientada a objectes, com la creació de classes, la gestió d'objectes i la interacció entre ells.</p>
-<p><a href="./Solucio/Biblioteca.zip">Descarrega ací la SOLUCIÓ.</a></p></div>
+<h3 id="7-metodes-daccio">7. <strong>Mètodes d'Acció</strong></h3>
+<ul>
+<li>Els noms de les funcions o mètodes han de ser <strong>verbs</strong> perquè representen una acció que el codi realitza.</li>
+<li><strong>Exemple</strong>: <code>getUserName()</code>, <code>calculateTotalAmount()</code>, <code>sendEmail()</code></li>
+</ul>
+<h3 id="8-evitar-noms-generals-o-massa-generics">8. <strong>Evitar noms generals o massa genèrics</strong></h3>
+<ul>
+<li>Intenta evitar noms com <code>data</code>, <code>info</code>, <code>item</code>, perquè són massa generals i no proporcionen molta informació sobre què fa la variable o funció.</li>
+<li><strong>Exemple millor</strong>: <code>userData</code>, <code>orderList</code>, <code>productItems</code>.</li>
+</ul>
+<h3 id="9-evitar-noms-reservats-o-conflictes-amb-paraules-clau">9. <strong>Evitar noms reservats o conflictes amb paraules clau</strong></h3>
+<ul>
+<li>Evita utilitzar paraules clau del llenguatge (com <code>class</code>, <code>return</code>, <code>let</code>, <code>for</code>, etc.) com a noms de variables o funcions.</li>
+<li><strong>Exemple</strong>: No utilitzis <code>let</code>, <code>const</code>, <code>return</code> com a noms de variables.</li>
+</ul>
+<h3 id="10-variables-booleans">10. <strong>Variables booleans</strong></h3>
+<ul>
+<li>Per a variables booleans (que es poden establir com <code>true</code> o <code>false</code>), és habitual utilitzar una forma interrogativa per al nom, generalment amb un prefix com <code>is</code>, <code>has</code>, <code>can</code> o <code>should</code>.</li>
+<li><strong>Exemple</strong>: <code>isValid</code>, <code>hasPermission</code>, <code>canEdit</code>, <code>shouldUpdate</code></li>
+</ul>
+<h3 id="11-evitar-lus-de-_-guio-baix-inicial">11. <strong>Evitar l'ús de _ (guió baix inicial)</strong></h3>
+<ul>
+<li>A JavaScript, la convenció de utilitzar un guió baix inicial <code>_</code> per indicar que una variable és <strong>privada</strong> és habitual en alguns codi, però no és una pràctica estàndard del llenguatge. Aquest comportament sol ser comú quan es fa servir amb <code>class</code> i mètodes privats.</li>
+</ul>
+<p><strong>Exemple</strong>: <code>_privateVar</code>, <code>_calculateTotal()</code></p>
+<h3 id="12-noms-de-funcions-i-variables-en-plural-o-singular">12. <strong>Noms de funcions i variables en plural o singular</strong></h3>
+<ul>
+<li><strong>Arrays o llistes</strong>: Si una variable conté diversos elements, és habitual utilitzar noms en plural.</li>
+<li><strong>Exemple</strong>: <code>users</code> (per a un array de persones), <code>items</code> (per a una llista d'objectes).</li>
+</ul>
+<h3 id="resum-de-les-convencions">Resum de les convencions:</h3>
+<ul>
+<li><strong>Camel Case</strong>: per a variables i funcions (<code>totalAmount</code>, <code>calculateSum</code>)</li>
+<li><strong>Pascal Case</strong>: per a classes i constructors (<code>Person</code>, <code>CarModel</code>)</li>
+<li><strong>Snake Case</strong>: per a noms de fitxers o en alguns entorns (per exemple, <code>user_name</code>)</li>
+<li><strong>Kebab Case</strong>: per a noms d'arxius i URLs (per exemple, <code>user-name</code>)</li>
+<li><strong>UPPERCASE</strong>: per a constants (<code>MAX_SIZE</code>, <code>PI_VALUE</code>)</li>
+</ul>
+<p>Seguir aquestes convencions ajuda a mantenir el codi net, organitzat i fàcil de llegir, especialment quan treballes en projectes col·laboratius amb altres desenvolupadors.</p></div>
 
 
 
