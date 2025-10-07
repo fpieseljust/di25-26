@@ -11,6 +11,8 @@
         <link rel="canonical" href="https://fpieseljust.github.io/di25-26/Projecte%20Biblioteca/Tasques/BDD/">
       
       
+        <link rel="prev" href="../ExerciciPOO/">
+      
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>BDD - Desenvolupament en entorn client - 2n DAW - IES Jaume II "El Just"</title>
+        <title>Incorporem la base de dades - Desenvolupament en entorn client - 2n DAW - IES Jaume II "El Just"</title>
       
     
     
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BDD
+              Incorporem la base de dades
             
           </span>
         </div>
@@ -274,17 +276,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -298,7 +302,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Projecte Biblioteca
@@ -670,17 +674,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -694,7 +700,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Exercicis
@@ -708,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../unitats/U0 - Repàs de JS/Tasques/ExerciciPOO.md" class="md-nav__link">
+      <a href="../ExerciciPOO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,10 +732,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../unitats/U0 - Repàs de JS/Tasques/BDD.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Incorporem la base de dades
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -738,6 +762,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#persistencia-de-dades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistència de dades:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntes-a-plantejar-nos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preguntes a plantejar-nos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -815,7 +875,7 @@
                   
 
 
-  <h1>BDD</h1>
+  <h1>Incorporem la base de dades</h1>
 
 <div><h3 id="persistencia-de-dades">Persistència de dades:</h3>
 <p>Es vol garantir la persistència de les dades utilitzant MySQL com a base de dades, la qual ha de ser executada en un contenidor Docker. El sistema ha de mantenir les dades de forma persistent, fins i tot si el contenidor es reinicia o es recrea.</p>
